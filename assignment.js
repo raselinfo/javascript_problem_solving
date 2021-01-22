@@ -4,7 +4,7 @@ function kilometerToMeter(kilometer) {
     var oneKilometer = 1000; //one kilometer is 1000 meter.
     var message;
     var convertKilometerToMeter = 0;
-    if (isNaN(kilometer) || kilometer == undefined || typeof (kilometer) == "string") {
+    if (isNaN(kilometer) || kilometer == undefined || typeof (kilometer) == "string" || kilometer<0) {
         message = "not a valid input!"
         return message.toUpperCase();
     }
